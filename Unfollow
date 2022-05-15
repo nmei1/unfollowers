@@ -13,7 +13,7 @@ non_followers = set(bot.following) - set(bot.followers)
 for non_follower in non_followers:
     try:
         bot.unfollow(non_follower)
-        sleep(randint(6,12))
+        sleep(randint(1,8000))
     except Exception as e:
         print(e)
         sleep(randint(30,300))
